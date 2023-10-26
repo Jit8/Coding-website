@@ -1,0 +1,27 @@
+.mdblearn{
+    grid-template-areas:"text1 , img1";
+    display:flex;
+}
+#img1{
+    margin-left: 350px;
+}
+.mdbapp{
+    grid-template-areas: "text2 , img2";
+    display:flex;
+}
+#text2{
+    margin-left:470px;
+    line-height: 35px;
+}
+.topics{
+    grid-template-areas: "text3 , img3";
+    display:flex;
+    line-height: 35px;
+}
+#img3{
+    margin-left:390px;
+}
+body{
+    background-image:url(pics/TutorialBackground.jpg);
+    background-size: cover;
+}

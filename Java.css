@@ -1,0 +1,27 @@
+.javalearn{
+    grid-template-areas: "text1 , img1";
+    display:flex;
+}
+#img1{
+    position: absolute;
+    left:800px;
+    top:150px;
+}
+.javapp{
+    grid-template-areas: "img2 text2";
+    display:flex;
+}
+#text2{
+    margin-left: 350px;
+}
+.topics{
+    grid-template-areas:"text3 , img3";
+    display:flex;
+}
+#img3{
+    margin-left: 430px;
+}
+body{
+    background-image:url(pics/TutorialBackground.jpg);
+    background-size: cover;
+}

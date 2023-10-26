@@ -1,0 +1,51 @@
+body{
+    background-image: url(pics/rm373batch9-035.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.des{
+    grid-column: "info , pic";
+    display:flex;
+}
+.des ul li::marker{
+    color: rgb(1, 211, 1);
+}
+.scroll{
+    position: absolute;
+    top:400px;
+    left:600px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    animation:bounce 0.5s alternate cubic-bezier(0.5 , 0.05 , 1 , 0.5) infinite;
+}
+@keyframes bounce{
+    from{
+        transform: translate3d(0,0,0);
+    }
+    to{
+        transform: translate3d(0,50px,0);
+    }
+}
+.overview{
+    grid-template-areas: "ovr1 , ovr2";
+    display:flex;
+    color: white;
+}
+#ovr2{
+    margin-left:100px;
+}
+.syllabus{
+    color:white;
+}
+.syllabus ul li::marker{
+    color: rgb(5, 223, 5);
+}
+.tech{
+    margin-left:50px;
+    margin-right:50px;
+    padding:15px;
+}
+.technology{
+    grid-template-areas: "t1 , t2 , t3 , t4 , t5 , t6";
+    display: flex;
+}

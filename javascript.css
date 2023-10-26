@@ -1,0 +1,25 @@
+.jslearn{
+    grid-template-areas:"text1 , img1";
+    display:flex;
+}
+#img1{
+    margin-left: 330px;
+}
+.jsapp{
+    grid-template-areas: "text2 , img2";
+    display:flex;
+}
+#text2{
+    margin-left:430px;
+}
+.topics{
+    grid-template-areas: "text3 , img3";
+    display:flex;
+}
+#img3{
+    margin-left:390px;
+}
+body{
+    background-image:url(pics/TutorialBackground.jpg);
+    background-size: cover;
+}

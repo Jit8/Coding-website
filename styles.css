@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+#header{
+    height: 60px;
+    background-color:darkslateblue;
+}
+#navbar{
+    padding: 20px;
+    margin-left: 850px;
+}
+#icon{
+    position: absolute;
+    top: 15px;
+    left: 450px;
+    
+}
+#name{
+    position: absolute;
+    top: 2px;
+    left: 100px;
+    font-size: 30px;
+    color: cyan;
+}
+a.s2{
+    margin-left: 20px;
+    text-decoration: none;
+    color:yellow;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+a.s1{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+a.s1:hover{
+    color: yellow;
+}
+a.s3{
+    text-decoration: none;
+    color: black;
+}
+a.s3:hover{
+    text-decoration: underline;
+
+}
+.slider{
+    background-image: linear-gradient(rgba(0,0,0,0.85) , rgba(0,0,0,0.85)) , url(https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-position:center;
+    background-size:cover;
+    display: flex;
+    animation: slider 8s linear infinite;
+}
+  @keyframes slider{
+    0%{margin-left: 0px;}
+    50%{margin-left: -400px;}
+    100%{margin-left: -800px;}
+
+} 
+.myslider{
+    height:350px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.edu{
+    margin:100px;
+    width: 200px;
+    height: 200px;
+    border-style:solid;
+    border-color:cyan;
+    text-align: center;
+    font-size: 10px;
+    background-color:cyan;
+    box-shadow: 3px 3px 3px 3px black;
+}
+.tutorials1{
+    grid-template-areas: "a , b , c";
+    display: flex;
+}
+.tutorials2{
+    grid-template-areas: "d , e , f";
+    display: flex;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-options{
+    display:none;
+    position: absolute;
+    overflow: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+.dropdown:hover .dropdown-options{
+    display: block;
+}
+.dropdown-options a {
+    display: block;
+    color:black;
+    padding: 5px;
+    text-decoration: none;
+    padding:20px 40px;
+}
+.dropdown-options a:hover {
+    color:blueviolet;
+    background-color: #ddd;
+    border-radius:10px;
+}
+.companies{
+    margin-top: 100px;
+       width:40%;
+       height:150px;
+       position: absolute;
+       background-image: url("https://1000logos.net/wp-content/uploads/2021/04/Accenture-logo.png");
+       left:50%;
+       top:1400px;
+       transform:translate(-50% , -50%);
+       background-size: 100% 100%;
+       animation: replace 8s infinite linear;
+}
+@keyframes replace{
+    0%{
+        background-image: url('https://1000logos.net/wp-content/uploads/2021/04/Accenture-logo.png');background-size: 100% 100%;
+    }
+    20%{
+        background-image: url('https://static.vecteezy.com/system/resources/previews/022/100/816/non_2x/microsoft-logo-transparent-free-png.png');background-size: 100% 100%;
+    }
+    40%{
+        background-image: url('https://1000logos.net/wp-content/uploads/2021/05/Deloitte-logo.png');background-size: 100% 100%;
+    }
+    60%{
+        background-image: url('https://www.ibm.com/brand/experience-guides/developer/b1db1ae501d522a1a4b49613fe07c9f1/01_8-bar-positive.svg');background-size: 100% 100%;
+    }
+    80%{
+        background-image: url('https://1000logos.net/wp-content/uploads/2023/03/KPMG-logo.png');background-size: 100% 100%;
+    }
+    100%{
+        background-image: url('https://cdn.cookielaw.org/logos/b0a5f2cc-0b29-4907-89bf-3f6b380a03c8/0814c8dd-07ff-41eb-a1b0-ee0294137c9a/9ca69c31-5e86-432d-950c-cfa7fcaa3cc8/1280px-Qualcomm-Logo.svg.png');background-size: 100% 100%;
+    }
+
+}
+.success-stories{
+    grid-template-areas: "1 , 2 , 3 , 4";
+    display:flex
+}
+.story{
+    width:600px;
+    height:300px;
+    margin: 50px;
+    border-color:darkmagenta;
+    border-style:solid;
+    border-width: 0.05px;
+    box-shadow: 3px 3px 3px 1px darkmagenta;
+}
+.heading{
+    position: absolute;
+    top: 400px;
+    left:510px;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform:uppercase;
+    color: yellow;
+}
+.achievements{
+    grid-template-areas: "div1 div2";
+    display: flex;
+}
+.list{
+    margin-left: 200px;
+    line-height: 60px;
+}
+#div2{
+    margin-left: 300px;
+}
+.address{
+    display:flex;
+}
+.info{
+    margin-left:100px;
+}
+/* .register{
+    font-size: 18px;
+    background-color: rgb(187, 187, 246);
+    margin: 50px;
+    padding: 15px;
+} */
+button{
+    color:white;
+    background-color: blue;
+}
+button:hover{
+    color:yellow;
+    cursor: pointer;
+}
+.footer{
+    background-color: blueviolet;
+    grid-template-areas: "ft1 , ft2 , ft3 , ft4";
+    display:flex;
+    padding: 30px;
+}
+.tell{
+    color:white;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-size: 18px;
+}
+.footer ul li::marker{
+    color: yellow;
+}
+

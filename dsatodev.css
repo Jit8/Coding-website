@@ -1,0 +1,66 @@
+body{
+    background-image: url(pics/rm373batch9-035.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+}
+.Introduction{
+    position: relative;
+    top:270px;
+    color:rgb(91, 224, 39);
+}
+.scroll{
+    position: absolute;
+    top:480px;
+    left:600px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    animation:bounce 0.5s alternate cubic-bezier(0.5 , 0.05 , 1 , 0.5) infinite;
+}
+@keyframes bounce{
+    from{
+        transform: translate3d(0,0,0);
+    }
+    to{
+        transform: translate3d(0,50px,0);
+    }
+}
+.description{
+    grid-template-areas: "pic , info";
+    display:flex;
+}
+#info{
+    margin-left: 330px;
+}
+.des ul li::marker{
+    color: rgb(4, 211, 4);
+}
+.des{
+    color:white;
+}
+.about{
+    grid-template-areas: "about1 , about2";
+    display:flex;
+}
+.journey{
+    grid-template-areas: "j1 , j2 , j3 , j4";
+    display: flex;
+}
+.phase{
+    margin-left: 90px;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.5px;
+    text-align: center;
+    width:500px;
+    height: 200px;
+    padding: 15px;
+}
+.tech{
+    margin-left:50px;
+    margin-right:50px;
+    padding:15px;
+}
+.technology{
+    grid-template-areas: "t1 , t2 , t3 , t4 , t5 , t6";
+    display: flex;
+}
